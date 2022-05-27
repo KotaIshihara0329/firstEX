@@ -1,0 +1,82 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+
+    @include mq(ip) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 2rem;
+    }
+
+
+    &__picture {
+        margin-bottom: 5px;
+
+        @include mq(ip) {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img {
+        width: 263px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(ip) {
+            align-items: flex-end;
+            
+        }
+
+    }
+
+    &__text {
+        line-height: 3.5rem;
+        font-size: 1.4rem;
+
+        @include mq(ip) {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        
+    
+    }
+
+    &__call {
+        width: 25px;
+      
+        margin-right: 3px;
+    }
+
+    &__number {
+        color: $color-main;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+
+
+}
+
+.box {
+    background-color: orange;
+    height: 50vh;
+}

@@ -1,0 +1,100 @@
+.card {
+    background-color: $color-back-1;
+    height: 59.1rem;
+    width: 80%;
+    border: 2px solid #C9C9C9;
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+
+    &--2 {
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    
+    
+        
+        @include mq(pc) {
+            
+            margin-top:initial;
+            margin-bottom:initial;
+    
+        }
+    }
+
+    @include mq(ip) {
+        height: 50rem;
+        width: 60%;
+
+
+    }
+    @include mq(pc) {
+        height: 59.1rem;
+        width: calc((100% - 4rem)/ 3);
+        padding: 1rem;
+
+
+    }
+   
+
+    &__heading--3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 4.5rem;
+        letter-spacing: 1px;
+        
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 2.1;
+        font-weight: bold;
+        margin: 0 auto;
+     
+
+
+        &--1 {
+       
+
+            @include mq(ip) {
+                width: 44rem;
+            }
+            @include mq(pc) {
+                width: 31.9rem;
+            }
+        }
+        &--2 {
+
+    
+
+            @include mq(ip) {
+                width: 44rem;
+            }
+            @include mq(pc) {
+                width: 30.4rem;
+            }
+
+        }
+        &--3 {
+    
+
+            @include mq(ip) {
+                width: 44rem;
+            }
+            @include mq(pc) {
+                width: 32.4rem;
+            }
+
+        }
+        
+    }
+
+    &__img {
+        @include absCenter;
+        top: 80%;
+    }
+
+}

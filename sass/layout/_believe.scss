@@ -1,0 +1,124 @@
+.believe {
+
+    height: 55rem;
+    padding: 6rem 1.2rem 5rem;
+
+    @include mq(mb) {
+        height: 70rem;
+    }
+
+    @include mq(ip) {
+        display: flex;
+        flex-direction: row;
+        padding: 10.2rem 3rem ;
+        align-items: center;
+        height: 60rem;
+    }
+    
+    @include mq(pc) {
+        height: 66.4rem;
+        padding-top: 16.2rem;
+        padding: 16.2rem 1rem 1rem;
+        align-items: initial;
+    }
+
+
+    &__heading--2 {
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: 1px;
+
+        @include mq(pc) {
+            text-align: left;
+            font-size: 2.4rem;
+        }
+        
+        
+        // text-decoration: underline;
+        // text-decoration-color: #99E5A5;
+        // text-decoration-thickness: 10px;
+        // text-underline-offset: -6px;
+
+       
+    
+
+    }
+
+    &__letter {
+
+        @include mq(ip) {
+            margin-right: 5rem;
+        }
+
+        @include mq(pc) {
+            margin-top: 3.3rem;
+        }
+
+        
+    }
+
+    &__color {
+        background-image: linear-gradient(to bottom, transparent 65%, #99E5A5 10% );
+        background-position-x: -3rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+
+        @include mq(ip) {
+            font-size: 1.5rem;
+            
+        }
+
+        @include mq(pc) {
+            margin-bottom: 3.2rem;
+            font-size: 2.4rem;
+        }
+        
+    }
+   
+    
+
+    &__text {
+        text-align: center;
+        letter-spacing: 0.8px;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        margin: 0 auto 2rem;
+        font-size: 1.2rem;
+
+        @include mq(ip) {
+            font-size: 1.2rem;
+            line-height: 2.6;
+            width: 32rem;
+        }
+
+        @include mq(pc) {
+            text-align: left;
+            margin-top: 5px;
+            line-height: 2.6;
+            width: 41.5rem;
+            font-size: 1.6rem;
+        }
+        
+    }
+
+    &__picture {
+        
+        
+        @include mq(pc) {
+            width: 69rem;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+
+       
+
+        
+
+        
+
+    }
+}

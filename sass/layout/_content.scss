@@ -1,0 +1,199 @@
+.content {
+    width: 100%;
+    margin: 0 auto;
+
+    height: 310rem;
+    background-color: $color-back-2 ;
+
+    @include mq(mb) {
+        height: 300rem;
+    }
+   
+    @include mq(ip) {
+        height: 260rem;
+    }
+    @include mq(pc) {
+        height: 152rem;
+    }
+
+    
+
+    &__color {
+        background-image: linear-gradient(to bottom, transparent 73%, $color-underline 27%);
+    }
+
+    &__heading--2 {
+        margin-bottom: 7rem;
+        text-align: center;
+        letter-spacing: 1px;
+        
+       
+
+        &--1 {
+            padding-top: 7.8rem;
+        }
+
+        &--2 {
+            margin-top: 8.2rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 3.4rem;
+        font-size: 1.2rem;
+
+        @include mq(ip) {
+            font-size: 1.6rem;
+        }
+        
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(ip) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include mq(pc) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__flag-box {
+        width: 80%;
+        margin: 0 auto;
+        background-color: $color-back-1;
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+        box-shadow: 0 3px 6px rgba($color: #000029, $alpha: 0.25);
+        border-radius: 22px;
+        padding-top: 3rem;
+
+        @include mq(ip) {
+            
+            padding-left: 6.6rem;
+            padding-right: 6.6rem;
+            box-shadow: 0 3px 6px rgba($color: #000029, $alpha: 0.25);
+            border-radius: 22px;
+            padding-top: 3rem;
+        }
+
+
+        @include mq(pc) {
+            width: 100%;
+            padding-left: 6.6rem;
+            padding-right: 6.6rem;
+            box-shadow: 0 3px 6px rgba($color: #000029, $alpha: 0.25);
+            border-radius: 22px;
+            padding-top: 3rem;
+        }
+
+
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #E7E7E7;
+        padding: 1.95rem 0;
+        font-weight: bold;
+        
+
+        dt {
+            margin-right: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+
+            @include mq(ip) {
+         
+                margin-right: 3rem;
+            }
+            @include mq(pc) {
+                display: initial;
+            }
+
+            time {
+                color: $color-main;
+                font-weight: bold;
+                margin-right: 3rem;
+                margin-bottom: 1rem;
+
+
+                @include mq(pc) {
+                    margin-bottom: initial;
+                }
+            }
+
+            .span {
+                font-size: 1.2rem;
+                background-color: $color-primary;
+                color: #fff;
+                padding: 0.4rem 1.6rem;
+                display: inline-block;
+                transform: translateX(-1.7rem);
+
+                @include mq(pc) {
+                    transform: initial;
+                }
+
+
+                &--special {
+                    padding: 0.4rem 2.8rem;
+                }
+            }
+        }
+
+        dd {
+            font-size: 1.2rem;
+
+            
+            @include mq(ip) {
+                font-size: 1.6rem;
+            }
+            
+        }
+
+
+    }
+
+    &__all {
+        font-weight: bold;
+        padding: 4.6rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            transform: translateX(2.5rem);
+        }
+
+    }
+
+
+
+}
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    transform: translateY(1px) translateX(24px);
+    
+  }
